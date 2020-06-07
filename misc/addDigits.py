@@ -45,5 +45,5 @@ class Solution:
 
 """
 1) Stored the every single digit of given number in a list. Check if addition of that list is >= 10 else repeat the same method.
-2) 2) Check addition2 method also.
+2) Check addition2 method also.
 """
