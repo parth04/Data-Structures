@@ -30,24 +30,21 @@ class Solution:
         q= []
         result =[]
         q.append(root)
-        result.append([root.val])
-
+    
         while q:
             output = []
             cnt = len(q)
-            print("Level is:", cnt)
             while cnt > 0:
                 front = q[0]
+                output.append(front.val)
                 if front.left:
-                    output.append(front.left.val)
                     q.append(front.left)
                 if front.right:
-                    output.append(front.right.val)
                     q.append(front.right)
                 cnt-=1
                 q.pop(0)
             result.append(output)
-        return reversed(result[:-1])       
+        return reversed(result)          
 
 """
 Explanation:
