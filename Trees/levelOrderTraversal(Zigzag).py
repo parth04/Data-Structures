@@ -29,30 +29,29 @@ class Solution:
             return list()
         q= []
         result =[]
-        level = 2
+        level = 1
         q.append(root)
-        result.append([root.val])
 
         while q:
             output = []
             cnt = len(q)
             while cnt > 0:
                 front = q[0]
+                output.append(front.val)
                 if front.left:
-                    output.append(front.left.val)
                     q.append(front.left)
                 if front.right:
-                    output.append(front.right.val)
                     q.append(front.right)
                 cnt-=1
                 q.pop(0)
+                
             if level%2 == 0:
                 result.append(reversed(output))
             else:
                 result.append(output)
             level+=1
                 
-        return result[:-1]     
+        return result     
 
 """
 Explanation:
