@@ -71,7 +71,7 @@ class Solution:
         # print("---------3*3---------")
         for row in range(0, 9, 3):
             for column in range(0, 9, 3):
-                square.append([board[l][c] for c in range(column, column + 3) for l in range(line, line + 3)])
+                square.append([board[l][c] for c in range(column, column + 3) for l in range(row, row + 3)])
         # for i in range(9):
         #     print(square[i])
             
