@@ -14,8 +14,9 @@ There is no subset that add up to 30.
 """
 
 def subsetSumProblem (arr,sum,t):
+    #Initialization	
     for i in range(len(arr) + 1):
-        for j in range(sum + 1):
+        for j in range(sum + 1): 
             if i == 0:
                 t[i][j] = False
             if j == 0:
